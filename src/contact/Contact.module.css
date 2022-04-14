@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ecffe5;
+    /*height: 100vh;*/
+    width: 100%;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*border: 1px solid black;*/
+}
+
+.btn {
+    height: 60px;
+    color: black;
+    border: 1px solid #8d8d8d;
+    /*font-weight: bold;*/
+    width: 100%;
+    /*background: none;*/
+}
+/*.btn:hover {*/
+/*    background: none;*/
+/*    border: 1px solid #97796c;*/
+/*    color: #97796c;*/
+/*    font-weight: bold;*/
+/*}*/
+

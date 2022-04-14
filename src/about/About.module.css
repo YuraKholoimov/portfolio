@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9d4e9;
+    height: 100vh;
+    width: 100%;
+}
+
+.biographyItem {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+
+.aboutCardsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 770px;
+    font-size: 26px;
+    /*background-color: #977750;*/
+}
+.links {
+    display: flex;
+    /*flex-direction: row;*/
+justify-content: space-between;
+    height: 100px;
+    width: 500px;
+    background-color: #ffffff;
+}
+
+.solidStick {
+    width: 50px;
+    height: 15px;
+    border-bottom: #cbcbcb 2px solid;
+}

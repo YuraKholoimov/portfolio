@@ -1,0 +1,10 @@
+.portfolio {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+}
+
+.carousel {
+    display: flex;
+}
+

@@ -1,0 +1,11 @@
+.swiper {
+    width: 100%;
+    /*border: 1px solid;*/
+}
+
+.swiperMyStyle {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+
+}
