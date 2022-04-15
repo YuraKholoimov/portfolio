@@ -16,24 +16,7 @@
     height: 60px;
 
 }
-/** Layout */
-/*body {*/
-/*    background: #001432;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    font-family: Righteous;*/
-/*    height: 100vh;*/
-/*    margin: 0;*/
-/*}*/
-/*hr {*/
-/*    width: 33%;*/
-/*    border-color: rgba(255, 255, 255, 0.2);*/
-/*    border-width: 2px 0;*/
-/*    border-style: solid;*/
-/*    margin: 3em 0;*/
-/*}*/
+
 .arrowWrapper {
     display: flex;
     align-items: center;
@@ -61,7 +44,7 @@
     position: relative;
 }
 #arrow_1 .arrow span, #arrow_1 .arrow:before, #arrow_1 .arrow:after {
-    background: #eab76c;
+    background: #878686;
     content: '';
     display: block;
     width: 30px;

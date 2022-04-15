@@ -1,17 +1,23 @@
 .App {
     display: flex;
+    justify-content: space-between;
 
     /*border: 5px solid #37eb0a;*/
 }
 
-.container {
+.container1 {
     position: relative;
     display: flex;
     justify-content: center;
-    /*flex-direction: column;*/
-    /*border: 5px solid #d60aeb;*/
-    width: 70%;
+    width: 50%;
+    /*animation: container 0.5s ease-in-out;*/
+}
 
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 .Main {
@@ -27,3 +33,12 @@
     height: 100%;
 }
 
+/*@keyframes container {*/
+/*    from {*/
+
+/*    }*/
+/*    to {*/
+
+/*    }*/
+
+/*}*/

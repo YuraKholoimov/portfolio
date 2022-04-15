@@ -4,22 +4,8 @@ import Navigation from "../navigation/Navigation";
 
 
 const SideBar = () => {
-    const [scroll, setScroll] = useState(0)
-
-    window.addEventListener("scroll", () => {
-
-        if (window.scrollY > 0) {
-            setScroll(window.scrollY)
-        } else if (window.scrollY === 0) {
-            setScroll(window.scrollY)
-        }
-
-    })
-
-
-
     return (
-        <div className={scroll > 0 ? `${s.sidebarScroll}` : `${s.sidebar}`}>
+        <div className={s.sidebar}>
 
             <Navigation/>
 
@@ -27,13 +13,9 @@ const SideBar = () => {
                 <div className={s.sidebarPhoto}>
                     <div className={s.sidebarPhotoX}></div>
                     <div className={s.sidebarPhotoY}></div>
-
+                    xsxa
                 </div>
-
-
             </div>
-
-
         </div>
     );
 };
