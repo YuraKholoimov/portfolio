@@ -1,0 +1,93 @@
+.navigation {
+    position: sticky;
+    right: 0px;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    /*top: 0px;*/
+    border-left: 1px solid #292929;
+    z-index: 10;
+}
+
+.menuCloseBtn {
+    position: fixed;
+    top: 20px;
+    left: 95%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.menuBtn {
+    position: fixed;
+    left: 94%;
+    top: 20px;
+    width: 100px;
+    animation: btn 1s ease-in-out;
+}
+
+.menu {
+    display: flex;
+    right: 0px;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0 100px;
+    height: 100%;
+    width: 60%;
+    background-color: #ffffff;
+    /*border: 5px solid #0033f4;*/
+    animation: menu .7s ease-in;
+}
+
+.menuOut {
+    background-color: #d83f3f;
+    animation: menuOut .6s ease-in-out;
+}
+
+.menuBlock {
+    position: fixed;
+    top: 100px;
+    /*border: 5px solid #fbce10;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 15%;
+    height: 30%;
+    color: #646464;
+
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+        width: 0%;
+    }
+    to {
+        opacity: 1;
+        width: 60%;
+    }
+}
+
+@keyframes menuOut {
+    from {
+        opacity: 1;
+        width: 60%;
+    }
+    to {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes btn {
+    from {
+        opacity: 0;
+        /*width: 0%;*/
+    }
+    to {
+        opacity: 1;
+        /*width: 100%;*/
+    }
+}

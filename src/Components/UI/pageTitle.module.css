@@ -1,0 +1,46 @@
+.subTitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--mc);
+    margin-bottom: 54px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0;
+    padding-bottom: 15px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(0,0,0,.3);
+    width: 150px;
+    left: 0;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 403px;
+}
+
+.description {
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0;
+    margin-bottom: 57px;
+}
+.introductions {
+    font-size: 17px;
+}

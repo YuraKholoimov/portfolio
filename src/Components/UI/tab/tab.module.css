@@ -1,0 +1,49 @@
+.containerTab {
+    width: 100%;
+}
+
+.containerTab ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.tabHeader {
+    margin-bottom: 39px;
+}
+
+.tabHeader li {
+    display: inline-block;
+    list-style-type: none;
+    height: 33px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+    font-size: 30px;
+    border-bottom: 1px solid transparent;
+    line-height: 30px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.tabHeader li:nth-child(1):after,.tabHeader li:nth-child(2):after {
+    content: "";
+    border-bottom: 2px solid #cbcbcb;
+    margin: 0px 15px;
+    position: absolute;
+    width: 50px;
+    height: 15px;
+
+
+}
+
+.tabHeader li:active {
+    border-bottom: 1px solid #977750;
+}
+
+.tabHeader .active {
+    color: #977750;
+    border-bottom: 1px solid #977750;
+}

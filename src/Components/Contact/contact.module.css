@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: #ecffe5;*/
+    width: 100%;
+    padding: 100px 0 100px;
+}
+
+.btn {
+    height: 60px;
+    color: black;
+    border: 1px solid #8d8d8d;
+    font-weight: bold;
+    width: 100%;
+    /*background: none;*/
+}
+/*.btn:hover {*/
+/*    background: none;*/
+/*    border: 1px solid #97796c;*/
+/*    color: #97796c;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.contact_info {
+    padding: 95px 0 0;
+}
+
+.contact_info p {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact_info h3 {
+    margin-bottom: 58px;
+    font-weight: 400;
+    max-width: 300px;
+}
+
+.contact_info h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link_email {
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: none;
+    font-size: 18px;
+}
