@@ -1,6 +1,4 @@
 header {
-
-
     /*background-color: #f8daff;*/
 }
 
@@ -9,19 +7,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
     width: 100%;
     height: 100vh;
     padding: 150px 0;
 }
 
-
 @media (max-width: 1040px) {
-    header {
-        background-color: #dfffe2;
-
-    }
-
     .header {
         height: 100%;
         padding-bottom: 120px;
@@ -30,8 +21,6 @@ header {
 
 @media (max-width: 768px) {
     .header {
-
-        min-height: 100vh;
         height: 100%;
         padding-bottom: 120px;
         background-color: #f2c9fb;

@@ -54,7 +54,6 @@
     /*height: 100vh;*/
     width: 100%;
     /*position: fixed;*/
-
     padding: 100px 16%;
     overflow: hidden;
     outline: none;
@@ -189,7 +188,6 @@
         min-height: inherit;
 
     }
-
 
     .sidebar_in {
         padding: 100px 15%;

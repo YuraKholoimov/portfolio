@@ -114,8 +114,12 @@ table a {
 @media (max-width: 768px) {
     .about {
         border-color: #91c161;
-        height: 700px;
+        /*height: 900px;*/
         width: 100%;
+    }
+
+    .downloadCVButton {
+        
     }
 
     .aboutInfo {
@@ -129,7 +133,6 @@ table a {
     }
 
     table {
-
         display: flex;
         flex-direction: column;
     }

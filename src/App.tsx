@@ -21,6 +21,7 @@ function App() {
                 height: "10px",
                 width: "100%",
                 position: "absolute",
+                zIndex:"20",
                 backgroundColor: "green"
             }} ref={observer}></div>
             <div className={isVisible ? "container1" : "container2"}>
