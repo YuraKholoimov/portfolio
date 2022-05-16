@@ -2,8 +2,12 @@ import React, {useRef, useState} from 'react';
 
 import s from "./InputRange.module.css"
 
-const InputRange = () => {
-    let [valTooltip, setValTooltip] = useState<any>(90)
+type InputRangePropsType = {
+    value: number | string
+}
+
+const InputRange = ({value}: InputRangePropsType) => {
+    let [valTooltip, setValTooltip] = useState<number | string>(value)
 
     const onInputCallback = (e: any) => {
         let max = e.currentTarget.max
@@ -18,7 +22,9 @@ const InputRange = () => {
             <input type="range" max="100" value={`${valTooltip}`} className={s.inp} onInput={onInputCallback}/>
 
             <div className={s.sliderThumb}>
-                <div className={s.tooltip} style={{left: `${valTooltip}%`}}>{`${valTooltip}%`}</div>
+                <div className={s.tooltip} style={{left: `${valTooltip}%`}}>
+                    {typeof valTooltip === "number" ? `${valTooltip}%` : value}
+                </div>
             </div>
         </div>
     );

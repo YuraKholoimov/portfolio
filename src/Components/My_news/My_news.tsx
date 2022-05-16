@@ -1,7 +1,6 @@
 import React from 'react';
 import s from "./my_news.module.css"
 import PageTitlePortfolio from "../UI/PageTitlePortfolio/PageTitlePortfolio";
-import {Card, CardContent, CardMedia, Paper} from "@mui/material";
 
 const MyNews = () => {
     const img_1 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/1.jpg'
@@ -11,7 +10,7 @@ const MyNews = () => {
     return (
         <section id="my_news">
             <div className={s.container}>
-                <PageTitlePortfolio/>
+                <PageTitlePortfolio title={"Последние статьи"} subTitle={"Новости и советы"}/>
 
                 <div className={s.blog_list}>
 
@@ -21,8 +20,8 @@ const MyNews = () => {
                         </div>
                         <div className={s.item_title}>
                             <p>Сунтября 22, 2021</p>
-                            <h3><a href="">Пять убедительных доказательств того, что посещение дизайнера полезно
-                                для вашего карьерного роста.</a>
+                            <h3><a href="">Пять убедительных доказательств того,
+                                что посещение дизайнера полезно для вашего карьерного роста.</a>
                             </h3>
                         </div>
                     </div>

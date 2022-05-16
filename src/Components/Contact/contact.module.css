@@ -7,21 +7,6 @@
     padding: 100px 0 100px;
 }
 
-.btn {
-    height: 60px;
-    color: black;
-    border: 1px solid #8d8d8d;
-    font-weight: bold;
-    width: 100%;
-    /*background: none;*/
-}
-/*.btn:hover {*/
-/*    background: none;*/
-/*    border: 1px solid #97796c;*/
-/*    color: #97796c;*/
-/*    font-weight: bold;*/
-/*}*/
-
 .contact_info {
     padding: 95px 0 0;
 }

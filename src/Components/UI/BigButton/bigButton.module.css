@@ -1,0 +1,28 @@
+.load_more {
+    padding-top: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.load_more a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 66px;
+    border: 2px solid rgba(11, 11, 11, 0.2);
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.load_more a:hover {
+    border: 2px solid rgb(151, 119, 80);
+    color: var(--mc)
+}
+.link_text {
+    transition: all .3s ease;
+}

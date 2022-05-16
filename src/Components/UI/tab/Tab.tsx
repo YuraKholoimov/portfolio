@@ -2,8 +2,9 @@ import * as React from 'react';
 
 import s from "./tab.module.css"
 import Experience from "../../About/Experience/Experience";
-import Education from "../../About/Education/Education";
+import {CardAbout} from "../../About/Education/CardAbout";
 import Skills from "../../About/Skills/Skills";
+import {Education} from "../../About/Education/Education";
 
 type InitStateType = {
     id: string,
@@ -26,8 +27,8 @@ export default function AccessibleTabs() {
     }
     const [value, dispatch] = React.useReducer(reducer, [
         {id: "Experience", component: <Experience/>, isActive: false},
-        {id: "Education", component: <Education/>, isActive: false},
-        {id: "Skills", component: <Skills/>, isActive: false},
+        {id: "CardAbout", component: <Education/>, isActive: false},
+        {id: "Skills", component: <Skills/>, isActive: true},
     ]);
 
     const onClickHandler = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
@@ -40,20 +41,20 @@ export default function AccessibleTabs() {
         <div className={s.containerTab}>
             <div className={s.tabHeader}>
                 <ul>
-                    <li className={value[0].isActive ? s.active : ''}
-                        data-tab={"Experience"}
-                        onClick={onClickHandler}
-                    >Experience
-                    </li>
-                    <li className={value[1].isActive ? s.active : ''}
-                        data-tab={"Education"}
-                        onClick={onClickHandler}
-                    >Education
-                    </li>
                     <li className={value[2].isActive ? s.active : ''}
                         data-tab={"Skills"}
                         onClick={onClickHandler}
-                    >Skills
+                    >Навыки
+                    </li>
+                    <li className={value[0].isActive ? s.active : ''}
+                        data-tab={"Experience"}
+                        onClick={onClickHandler}
+                    >Опыт
+                    </li>
+                    <li className={value[1].isActive ? s.active : ''}
+                        data-tab={"CardAbout"}
+                        onClick={onClickHandler}
+                    >Образование
                     </li>
                 </ul>
             </div>

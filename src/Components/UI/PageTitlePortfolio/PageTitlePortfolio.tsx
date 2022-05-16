@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from "./pageTitlePortfolio.module.css";
 import Arrow from "../Arrows/Arrow";
 import CarouselSwiper from "../../Portfolio/Carousel/CarouselSwiper";
 
-const PageTitle = () => {
+type PageTitlePropsType = {
+    subTitle: string
+    title: string
+}
+
+const PageTitle: FC<PageTitlePropsType> = (props) => {
     return (
         <div className={s.headerContent}>
-            <div className={s.subTitle}>Introduction</div>
-            <h3 className={s.title}>Front-end Developer</h3>
+            <div className={s.subTitle}>{props.subTitle}</div>
+            <h3 className={s.title}>{props.title}</h3>
         </div>
     );
 };

@@ -3,22 +3,20 @@ import {useEffect, useMemo, useState} from "react";
 
 const useElementOnScreen = (ref: any) => {
     const [isVisible, setIsVisible] = useState(true)
-    const [width, setWidth] = useState(0)
-
+    const [width, setWidth] = useState(1042)
 
     window.addEventListener('resize',function(e){
         // @ts-ignore
         const target = e.currentTarget.innerWidth;
         if (target) setWidth(target)
-
     });
-    // console.log(width)
+
     const callBack = (entry: any) => {setIsVisible(entry[0].isIntersecting)}
 
     const options = useMemo(() =>
         ({
             root: null,
-            rootMargin: '5px',
+            rootMargin: '15px',
             threshold: 1
         }), [])
 

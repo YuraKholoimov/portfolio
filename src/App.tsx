@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import About from './Components/About/About';
 import './App.css';
 import Header from './Components/Header/Header';
@@ -10,8 +10,10 @@ import useElementOnScreen from "./Hooks/useElementOnScreen";
 import Services from "./Components/Services/Services";
 import Customers from './Components/Customers/Customers';
 import My_news from "./Components/My_news/My_news";
+import s from "./Components/SideBar/sideBar.module.css";
 
 function App() {
+
     const observer = useRef(null)
     const isVisible = useElementOnScreen(observer) // return boolean to change width
 
@@ -24,6 +26,14 @@ function App() {
                 zIndex:"20",
                 backgroundColor: "green"
             }} ref={observer}></div>
+
+            {/*--- Menu Button ---*/}
+            <a href="#" className={s.menu_trigger}>
+                <span className={s.text}>Menu</span>
+                <span className={s.hamburger}>
+                    <span></span><span></span><span></span>
+                </span>
+            </a>
             <div className={isVisible ? "container1" : "container2"}>
                 <div className="pages">
                     <Header/>
@@ -36,7 +46,7 @@ function App() {
                 </div>
                 <Footer/>
             </div>
-            <SideBar/>
+            <SideBar isVisible={isVisible}/>
         </div>
     );
 }

@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: space-between;
     /*background-color: #cee3ec;*/
-    height: 660px;
+    /*height: 660px;*/
     width: 100%;
-    animation: experienc 1s ease-in-out;
+    animation: slide 1s ease-in-out;
 }
 
-.Card {
+.card {
     height: 123px;
     display: flex;
     flex-direction: column;
@@ -16,11 +16,12 @@
     border: 1px solid #dddddd;
     position: relative;
     padding: 42px 40px 43px;
+    margin: 10px 0;
     background-color: #fafafa;
     animation: experienc 1s ease-in-out;
 }
 
-.experienceCardPosition h3 {
+.cardPosition h3 {
     line-height: 1.2;
     font-size: 30px;
     font-weight: 400;
@@ -28,7 +29,7 @@
     color: #000;
     /*border: 1px solid red*/
 }
-.experienceCardPosition::before {
+.cardPosition::before {
     content: '';
     border: 2px solid #b7b6b6;
     height: 40px;
@@ -36,13 +37,13 @@
     left: 0;
 }
 
-.experienceCardTitle {
+.cardTitle {
     display: flex;
     line-height: 30px;
     margin-bottom: 14px;
 }
 
-.experienceCardTitle h5 {
+.cardTitle h5 {
     color: #000;
     font-size: 18px;
     text-transform: uppercase;
@@ -50,7 +51,7 @@
     line-height: 30px;
 }
 
-.experienceCardTitle span {
+.cardTitle span {
     display: block;
     font-size: 16px;
     line-height: 30px;
@@ -58,13 +59,13 @@
     color: #888;
 }
 
-.experienceCardDescription {
+.cardDescription {
     font-size: 17px;
     letter-spacing: 0;
     color: #746e6e;
 }
 
-@keyframes experienc {
+@keyframes slide {
     0% {
         transform: scale(0.9) rotate(-3deg);
         opacity: .3;

@@ -15,7 +15,6 @@ const Experience = () => {
                     Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
                 </div>
-
             </div>
 
             <div className={s.experienceCard}>

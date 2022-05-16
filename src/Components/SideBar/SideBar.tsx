@@ -1,23 +1,19 @@
 import React, {useState} from 'react';
 import s from "./sideBar.module.css"
-import Navigation from "../Navigation/Navigation";
 
-
-const SideBar = () => {
+type SideBarPropsType = {
+    isVisible: boolean
+}
+const SideBar = (props: SideBarPropsType) => {
     return (
-        <div className={s.sidebar}>
+        <div className={props.isVisible ? `${s.sidebar}` : `${s.sidebar2}`}>
 
-            {/*--- Menu Button ---*/}
-            <a href="#" className={s.menu_trigger}>
-                <span className={s.text}>Menu</span>
-                <span className={s.hamburger}>
-                    <span></span><span></span><span></span>
-                </span>
-            </a>
+
 
             {/*--- Content Sidebar---*/}
-            <div className={s.sidebar_in}>
-                <div className={s.sidebar_top}>
+            <div className={s.sidebar_in2}>
+
+                <div className={ props.isVisible ? `${s.sidebar_top}` : `${s.sidebar_top2}`}>
                     <div className={s.sidebar_border_1}></div>
                     <div className={s.sidebar_border_2}></div>
                     {/*--- img ---*/}

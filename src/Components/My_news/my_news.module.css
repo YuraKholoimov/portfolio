@@ -36,10 +36,6 @@
     vertical-align: middle;
 }
 
-.link_text {
-    transition: all .3s ease;
-}
-
 .item_title {
     padding-top: 25px;
 }
@@ -88,15 +84,17 @@
     border: 2px solid rgb(151, 119, 80);
     color: var(--mc)
 }
-
+.link_text {
+    transition: all .3s ease;
+}
 @media (max-width: 1040px) {
     .blog_card {
         max-width: 100%;
     }
 }
 
-/*@media (min-width:1041px) {*/
-/*    .blog_card {*/
-/*        max-width: 48%;*/
-/*    }*/
-/*}*/
+@media (max-width: 650px) {
+    .blog_card {
+        width: 100%;
+    }
+}

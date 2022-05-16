@@ -1,16 +1,20 @@
 import React from 'react';
 import s from "./pageTitle.module.css";
 
-const PageTitle = () => {
+type PageTitle = {
+    subTitle: string
+    title: string
+    description: string
+}
+
+const PageTitle = ({title, subTitle, description}: PageTitle) => {
+
     return (
         <div className={s.headerContent}>
-            <div className={s.subTitle}>Introduction</div>
-            <h3 className={s.title}>Front-end Developer</h3>
+            <div className={s.subTitle}>{subTitle}</div>
+            <h3 className={s.title}>{title}</h3>
             <div className={s.headerLine}></div>
-            <p className={s.description}>
-                Я проектирую и разрабатываю услуги для клиентов всех размеров, специализируясь на создании стильных,
-                современных веб-сайтов, веб-сервисов и интернет-магазинов.
-            </p>
+            <p className={s.description}>{description}</p>
         </div>
     );
 };

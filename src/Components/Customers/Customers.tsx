@@ -9,7 +9,7 @@ const Customers = () => {
         <section id="customers">
             <div className={s.container}>
                 {/*--- Customers Title ---*/}
-                <PageTitlePortfolio/>
+                <PageTitlePortfolio subTitle={""} title={"Клиенты"}/>
                 <div className={s.customers__partners}>
                     <ul>
                         <li>
