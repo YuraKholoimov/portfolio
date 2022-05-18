@@ -17,7 +17,7 @@ function App() {
     const observer = useRef(null)
     const isVisible = useElementOnScreen(observer) // return boolean to change width
 
-    const [isOpenMenu, setIsOpenMenu] = useState(true)
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
 
     const menuToggleHandler = (e: any) => {
         e.preventDefault()
