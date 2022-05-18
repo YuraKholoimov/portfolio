@@ -9,12 +9,6 @@ import {SetStateAction} from "react";
 import {onHandlerSmoothScroll} from "../../Utils/OnHandlerRefSmoothScroll";
 import {Link} from "react-router-dom";
 
-type Props = {
-    isOpenMenu: boolean
-    setIsOpenMenu: React.Dispatch<SetStateAction<boolean>>
-    isVisible: boolean
-};
-
 export const Navigation = (props: Props) => {
     const [navigationMenu, setNavigationMenu] = React.useState([
         {href: 'home', title: 'Домой', isActive: false},
@@ -73,8 +67,13 @@ export const Navigation = (props: Props) => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
+};
+
+
+type Props = {
+    isOpenMenu: boolean
+    setIsOpenMenu: React.Dispatch<SetStateAction<boolean>>
+    isVisible: boolean
 };
