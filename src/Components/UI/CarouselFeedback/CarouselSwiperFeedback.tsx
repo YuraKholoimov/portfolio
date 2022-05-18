@@ -21,7 +21,7 @@ const CarouselSwiperFeedback = () => {
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 autoplay={true}
-                speed={1000}
+                speed={2000}
                 effect={"coverflow"}
                 spaceBetween={50}
                 slidesPerView={1}
@@ -44,15 +44,29 @@ const CarouselSwiperFeedback = () => {
                 <SwiperSlide>
                     <div className={s.feedback__card}>
                         <p>
-                            “ Had a problem with the layout after Installation- found no approach. The support reacted
-                            quickly and competently. And solved the problem between Elementor and a WordPress update.
-                            Great! ”
+                            “ Была проблема с авторизацией на сайте.
+                            Юрий отреагировал быстро и грамотно, Большое спасибо! ”
                         </p>
                         <h3 className={s.title}>
-                            Dana Aktins
+                            Баксан Евгения
                         </h3>
                         <h3 className={s.subtitle}>
-                            Psicology
+                            Личностный рост, Психолог
+                        </h3>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={s.feedback__card}>
+                        <p>
+                            “ Благодаря профессионализму Юрия была найдена проблема в конфликте плагинов Wordpress.
+                            Бастро отреагировал и починил мой сайт. Всегда знаю к кому можно обращаться за помощью. ”
+                        </p>
+                        <h3 className={s.title}>
+                            Бакалым Сергей
+                        </h3>
+                        <h3 className={s.subtitle}>
+                            Upgrade Innovations - строительная компания
                         </h3>
 
                     </div>

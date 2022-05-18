@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import s from "./tab.module.css"
 import Experience from "../../About/Experience/Experience";
-import {CardAbout} from "../../About/Education/CardAbout";
+import {CardAbout} from "../CardAbout/CardAbout";
 import Skills from "../../About/Skills/Skills";
 import {Education} from "../../About/Education/Education";
 

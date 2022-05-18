@@ -1,0 +1,117 @@
+.navigation {
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+.isOpen {
+    transform: translateX(0);
+}
+.closed {
+    transform: translateX(135%);
+}
+
+.label_menu {
+    font-size: 18px;
+    color: #949494;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.nav_in {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_in ul {
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_in nav {
+    overflow: hidden;
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_open {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s ease;
+    transition-delay: 500ms;
+}
+
+.nav_close {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.nav_in nav ul li {
+    margin-bottom: 10px;
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_in a {
+    color: #333;
+    font-size: 30px;
+    line-height: 1.3;
+    transition: all .2s ease !important;
+    /*background-color: #e1a8a8;*/
+}
+.active {
+    color: var(--mc) !important;
+}
+
+.nav_footer {
+    transition: all .5s ease;
+    width: 90%;
+}
+
+.social ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.social ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 60px;
+    height: 50px;
+    background-color: #eaeaea;
+}
+.social li a {
+    padding-top: 10px;
+}
+
+.social .img {
+    padding-top: 3px;
+    content: url("../../Assets/codewars_logo_icon_145389.ico");
+}
+
+/*---- Media ----*/
+@media (max-width: 1200px) {
+    .social ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1040px) {
+    .social ul {
+        flex-direction: row;
+    }
+}

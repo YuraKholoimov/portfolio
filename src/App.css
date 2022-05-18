@@ -1,44 +1,36 @@
 .App {
     display: flex;
-    position: relative;
-    /*border: 5px solid #37eb0a;*/
 }
 
 .container1, .container2 {
+    width: 58%;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 58%;
+    overflow-x: hidden;
     transition: all .5s ease-in-out;
-    transform: translateX(0px);
 }
 
 .container2 {
     width: 68%;
     transition: all .2s ease-in-out;
-    /*transform: translateX(20px);*/
 }
 
 .pages {
+    width: 75%;
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 75%;
     transition: all .5s ease;
-    /*border: 1px solid #d60aeb;*/
 }
 
 /*-------------- @MEDIA -------------*/
 @media (max-width: 1450px) {
-    .pages {
-        width: 90%;
-    }
-    .container2 {
-        transform: translateX(30px);
-    }
+    .pages {}
+    .container2 {}
 }
 
 @media (max-width: 1040px) {
@@ -46,13 +38,11 @@
         width: 100%;
         flex-direction: column-reverse;
     }
-
     .container1,
     .container2 {
         width: 100%;
         transform: translateX(0px);
     }
-
     .pages {
         width: 95%;
     }

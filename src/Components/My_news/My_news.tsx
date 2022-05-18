@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./my_news.module.css"
 import PageTitlePortfolio from "../UI/PageTitlePortfolio/PageTitlePortfolio";
+import {BigButton} from "../UI/BigButton/BigButton";
 
 const MyNews = () => {
     const img_1 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/1.jpg'
@@ -8,7 +9,7 @@ const MyNews = () => {
     const img_3 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/3.jpg'
 
     return (
-        <section id="my_news">
+        <section id={"my_news"}>
             <div className={s.container}>
                 <PageTitlePortfolio title={"Последние статьи"} subTitle={"Новости и советы"}/>
 
@@ -50,14 +51,16 @@ const MyNews = () => {
                         </div>
                     </div>
 
-                    <div className={s.load_more}>
-                        <a href="#" className={s.done}>
-                            <span className={s.link_text}>Показать еще</span>
-                        </a>
-                    </div>
+
+                    {/*<div className={s.load_more}>*/}
+                    {/*    <a href="#" className={s.done}>*/}
+                    {/*        <span className={s.link_text}>Gjrfpfnm</span>*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
+
 
                 </div>
-
+                <BigButton>Показать еще</BigButton>
             </div>
         </section>
     );

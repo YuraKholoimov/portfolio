@@ -10,8 +10,9 @@ const Header = () => {
             <div className={s.header}>
                 {/*--- Main Title Block ---*/}
                 <PageTitle title={"Front-end Developer"} subTitle={"Вступление"} description={description}/>
-                <div>
-                    <img src="https://frenify.net/envato/frenify/html/resumo/1/img/signature.png" alt=""/>
+                <div className={s.signature}>
+                    {/*<img src="https://frenify.net/envato/frenify/html/resumo/1/img/signature.png" alt=""/>*/}
+                    <img src={"../../Assets/signature.png"} alt=""/>
                 </div>
             </div>
         </header>

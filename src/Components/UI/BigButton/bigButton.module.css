@@ -1,13 +1,10 @@
 .load_more {
-    padding-top: 10px;
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 .load_more a {
     display: block;
-    text-decoration: none;
-    font-size: 18px;
     font-weight: 500;
     color: #888;
     letter-spacing: 1px;
@@ -23,6 +20,12 @@
     border: 2px solid rgb(151, 119, 80);
     color: var(--mc)
 }
+
+.load_more a:active {
+    border: 2px solid rgb(151, 119, 80);
+    color: var(--mc)
+}
+
 .link_text {
     transition: all .3s ease;
 }

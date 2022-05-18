@@ -1,11 +1,11 @@
 .navigation {
-    position: sticky;
-    right: 0px;
-    display: flex;
-    justify-content: end;
     height: 100%;
     width: 100%;
-    /*top: 0px;*/
+    position: sticky;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    top: 0;
     border-left: 1px solid #292929;
     z-index: 10;
 }
@@ -13,23 +13,23 @@
 .menuCloseBtn {
     position: fixed;
     top: 20px;
-    left: 95%;
+    left: 85%;
     display: flex;
     justify-content: end;
-
+    animation: btn 1s ease-in-out;
 }
 
 .menuBtn {
-    position: fixed;
-    left: 94%;
-    top: 20px;
     width: 100px;
+    position: fixed;
+    left: 84%;
+    top: 20px;
     animation: btn 1s ease-in-out;
 }
 
 .menu {
     display: flex;
-    right: 0px;
+    right: 0;
     justify-content: start;
     flex-direction: column;
     padding: 0 100px;

@@ -16,7 +16,7 @@ const About = () => {
         "Обычно я люблю проводить свой досуг\n" +
         "на Codewars."
     return (
-        <section id="about">
+        <section id={"about"}>
             <div className={s.about}>
                 {/*--- Main Title ---*/}
                 <PageTitle title={"Биография"} subTitle={"Обо мне"} description={description}/>

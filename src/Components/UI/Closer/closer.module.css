@@ -1,0 +1,59 @@
+.closer_container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-self: end;
+    height: 100px;
+    width: 100px;
+    z-index: 111;
+}
+
+.closer {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #888;
+    right: 0;
+    top: 40px;
+    overflow: hidden;
+    z-index: 55;
+    border: 2px solid #ffffff;
+}
+
+.closer::before {
+    transform: rotate(-45deg) translateZ(0);
+    top: 18px;
+    left: -1px;
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 2px;
+    background-color: #888;
+    transition: all .3s ease;
+    perspective: 30px;
+
+}
+.closer::after {
+    top: 18px;
+    left: -1px;
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 2px;
+    background-color: #888;
+    transition: all .3s ease;
+    perspective: 30px;
+    transform: rotate(45deg) translateZ(0);
+
+}
+
+.closer:hover {
+    border: 2px solid var(--mc);
+    transform: scale(0.9);
+}
+.closer:active {
+    border: 2px solid var(--mc);
+    transform: scale(0.7);
+}

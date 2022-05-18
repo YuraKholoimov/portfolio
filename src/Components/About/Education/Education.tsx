@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {CardAbout} from "./CardAbout";
+import {CardAbout} from "../../UI/CardAbout/CardAbout";
 
 type Props = {};
 export const Education = (props: Props) => {
@@ -24,13 +24,13 @@ export const Education = (props: Props) => {
         },
     ]
 
-
     return (
         <div>
             {
-                data.map(item => {
+                data.map((item , index)=> {
                     return (
                         <CardAbout
+                            key={index}
                             position={item.position}
                             title={item.title}
                             date={item.date}

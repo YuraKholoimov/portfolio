@@ -7,7 +7,7 @@ import {BigButton} from "../UI/BigButton/BigButton";
 const Contact = () => {
     const description = "Если у вас есть какое-либо предложение, проект или вы просто хотите поздороваться, пожалуйста, заполните форму ниже, и я отвечу вам в ближайшее время."
     return (
-        <section id={"Contact"}>
+        <section id={"contact"}>
             <div className={s.container}>
                 <PageTitle title={"Связаться"} subTitle={"Контакты"} description={description}/>
                 <div className={s.form}>
@@ -28,7 +28,9 @@ const Contact = () => {
                             />
                         <BigButton>Отправить сообщение</BigButton>
                     </form>
+
                 </div>
+
                 <div className={s.contact_info}>
                     <p>Адрес</p>
                     <h3>Россия, Москва</h3>

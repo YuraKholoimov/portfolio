@@ -1,14 +1,20 @@
 import React from 'react';
 import s from "./footer.module.css"
+import {onHandlerSmoothScroll} from "../../Utils/OnHandlerRefSmoothScroll";
 
 const Footer = () => {
     return (
         <footer id={"footer"}>
-            <div className={s.footer_top}><a href="#home"></a></div>
+            <div className={s.footer_top}>
+                <a href="#"></a>
+            </div>
             <div className={s.arrow_block}>
-                <a href="#" className={s.link_arrow}>
+                {/*<Link>*/}
+                    <a href="#" className={s.link_arrow}
+                       onClick={(e) => onHandlerSmoothScroll(e, "home")}>
                     <span></span>
                 </a>
+                {/*</Link>*/}
             </div>
             <div className={s.container}>
                 <div className={s.footer_content}>

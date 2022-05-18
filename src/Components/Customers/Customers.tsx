@@ -19,8 +19,8 @@ const Customers = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://upgradefor.com/" target={"_blank"}>
-                                <img src="https://upgradefor.com/wp-content/uploads/2021/08/Logo_upgradefor.png"
+                            <a href="http://eva-jenstvennosti.ru/" target={"_blank"}>
+                                <img src="http://eva-jenstvennosti.ru/wp-content/themes/NicePen/images/logo.png"
                                      alt="LOGO"/>
                             </a>
                         </li>

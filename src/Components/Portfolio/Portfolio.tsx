@@ -6,7 +6,7 @@ import PageTitlePortfolio from "../UI/PageTitlePortfolio/PageTitlePortfolio";
 
 const Portfolio = () => {
     return (
-        <section id="portfolio" >
+        <section id={"portfolio"}>
             <div className={s.portfolio}>
                 <PageTitlePortfolio subTitle={"Портфолио"} title={"Избранные проекты"}/>
                 <CarouselSwiper/>

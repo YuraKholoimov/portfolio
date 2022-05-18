@@ -10,6 +10,7 @@
     flex-direction: row;
     gap: 3rem;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .blog_card {
@@ -66,8 +67,8 @@
 
 .load_more a {
     display: block;
-    text-decoration: none;
-    font-size: 18px;
+    /*text-decoration: none;*/
+    /*font-size: 18px;*/
     font-weight: 500;
     color: #888;
     letter-spacing: 1px;
@@ -86,6 +87,11 @@
 }
 .link_text {
     transition: all .3s ease;
+}
+@media (max-width: 1205px) {
+    .blog_card {
+        width: 100%;
+    }
 }
 @media (max-width: 1040px) {
     .blog_card {
