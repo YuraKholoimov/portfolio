@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    height: 403px;
+    min-height: 403px;
 }
 
 .description {

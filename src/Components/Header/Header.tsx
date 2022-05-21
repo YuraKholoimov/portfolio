@@ -9,10 +9,11 @@ const Header = () => {
         <header id="home">
             <div className={s.header}>
                 {/*--- Main Title Block ---*/}
-                <PageTitle title={"Front-end Developer"} subTitle={"Вступление"} description={description}/>
+                {/*<div className={s.header_title}>*/}
+                    <PageTitle title={"Front-end Developer"} subTitle={"Вступление"} description={description}/>
+                {/*</div>*/}
                 <div className={s.signature}>
-                    {/*<img src="https://frenify.net/envato/frenify/html/resumo/1/img/signature.png" alt=""/>*/}
-                    <img src={"../../Assets/signature.png"} alt=""/>
+                    <img src="" alt=""/>
                 </div>
             </div>
         </header>

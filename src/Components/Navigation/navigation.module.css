@@ -1,93 +1,138 @@
+.container {
+    position: fixed;
+    z-index: 2;
+}
+
 .navigation {
-    height: 100%;
-    width: 100%;
-    position: sticky;
+    height: 100vh;
+    width: 42%;
+    background-color: #fff;
+    position: fixed;
     right: 0;
-    display: flex;
-    justify-content: end;
     top: 0;
-    border-left: 1px solid #292929;
-    z-index: 10;
-}
-
-.menuCloseBtn {
-    position: fixed;
-    top: 20px;
-    left: 85%;
+    bottom: 0;
+    transition: all 700ms ease;
     display: flex;
-    justify-content: end;
-    animation: btn 1s ease-in-out;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
 }
 
-.menuBtn {
-    width: 100px;
-    position: fixed;
-    left: 84%;
-    top: 20px;
-    animation: btn 1s ease-in-out;
+.width {
+    width: 32%;
+    transition: all 500ms ease;
 }
 
-.menu {
-    display: flex;
-    right: 0;
-    justify-content: start;
-    flex-direction: column;
-    padding: 0 100px;
-    height: 100%;
-    width: 60%;
-    background-color: #ffffff;
-    /*border: 5px solid #0033f4;*/
-    animation: menu .7s ease-in;
+.isOpen {
+    transform: translateX(0);
 }
 
-.menuOut {
-    background-color: #d83f3f;
-    animation: menuOut .6s ease-in-out;
+.closed {
+    transform: translateX(135%);
 }
 
-.menuBlock {
-    position: fixed;
-    top: 100px;
-    /*border: 5px solid #fbce10;*/
+.label_menu {
+    font-size: 18px;
+    color: #949494;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.nav_in {
+    width: 75%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    width: 15%;
-    height: 30%;
-    color: #646464;
-
+    justify-content: space-around;
+    /*background-color: #e1a8a8;*/
 }
 
-@keyframes menu {
-    from {
-        opacity: 0;
-        width: 0%;
-    }
-    to {
-        opacity: 1;
-        width: 60%;
+.nav_in ul {
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_in nav {
+    overflow: hidden;
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_open {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s ease;
+    transition-delay: 500ms;
+}
+
+.nav_close {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.nav_in nav ul li {
+    margin-bottom: 10px;
+    /*background-color: #e1a8a8;*/
+}
+
+.nav_in a {
+    color: #333;
+    font-size: 30px;
+    line-height: 1.3;
+    transition: all .2s ease !important;
+    /*background-color: #e1a8a8;*/
+}
+
+.active {
+    color: var(--mc) !important;
+}
+
+.nav_footer {
+    transition: all .5s ease;
+    width: 90%;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 60px;
+    height: 50px;
+    background-color: #eaeaea;
+}
+
+.social li a {
+    padding-top: 10px;
+}
+
+.social .img {
+    padding-top: 3px;
+    content: url("../../Assets/codewars_logo_icon_145389.ico");
+}
+
+/*---- Media ----*/
+@media (max-width: 1200px) {
+    .social ul {
+        flex-direction: column;
     }
 }
 
-@keyframes menuOut {
-    from {
-        opacity: 1;
-        width: 60%;
+@media (max-width: 1040px) {
+    .navigation {
+        width: 100%;
     }
-    to {
-        opacity: 0;
-        width: 0%;
+
+    .social ul {
+        flex-direction: row;
     }
 }
 
-@keyframes btn {
-    from {
-        opacity: 0;
-        /*width: 0%;*/
-    }
-    to {
-        opacity: 1;
-        /*width: 100%;*/
-    }
+@media (max-width: 540px) {
+    .navigation {}
 }

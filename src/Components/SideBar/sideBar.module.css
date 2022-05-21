@@ -13,21 +13,18 @@
 }
 .sidebar2 {
     transition: all 300ms ease-in-out;
-    /*transform: translateX(200px) ;*/
-    animation: squizSideBar .5s ease-in-out;
+    animation: squizSideBar .3s ease-in-out;
     width: 34%;
 }
 
-.sidebar_in, .sidebar_in2 {
+.sidebar_in {
     position: relative;
     display: flex;
     justify-content: end;
-
     left: 0;
     padding: 100px 16%;
     overflow: hidden;
     outline: none;
-    /*background-color: green;*/
 }
 
 
@@ -42,6 +39,8 @@
     top: 40px;
     z-index: 5;
     animation: btn 1s ease-in-out;
+    background-color: #fff;
+
 }
 
 .menu_trigger .hamburger {
@@ -75,6 +74,7 @@
 }
 
 .sidebar_top2 {
+
     transition: all .5s ease-in-out;
     /*transform: scale(.8) translateX(0);*/
     /*background-color: #ffebeb;*/
@@ -206,16 +206,30 @@
         transition: all .5s ease-in-out;
         transform: scale(1) translateX(0px);
     }
+    .menu_trigger {
+        border: 1px solid;
+    }
 }
 
 @media (max-width: 768px) {
     .sidebar, .sidebar2 {
-        position: relative;
         width: 100%;
     }
-    .sidebar_in, .sidebar_in2  {
-        width: 100%;
+    .sidebar_in {
+        padding: 100px 15%;
     }
+    .sidebar_top, .sidebar_top2 {
+        padding: 38px 41px;
+        height: 100%;
+
+        transition: all .5s ease-in-out;
+        transform: scale(1) translateX(0px);
+    }
+    .img_holder img {
+        height: 300px;
+    }
+
+
 }
 
 /*----- keyframes------*/

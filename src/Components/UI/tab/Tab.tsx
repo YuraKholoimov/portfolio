@@ -17,14 +17,14 @@ export default function AccessibleTabs() {
     const reducer = (state: InitStateType[], action: ActionType): InitStateType[] => {
         switch (action.type) {
             case "SHOW":
-                return [...state.map((el: InitStateType) => el.id === action.id ? {...el, isActive: true} : {
-                    ...el,
-                    isActive: false
+                return [...state.map((el: InitStateType) => el.id === action.id ? {...el, isActive: true}
+                    : {...el, isActive: false
                 })]
             default:
                 throw new Error("Error")
         }
     }
+
     const [value, dispatch] = React.useReducer(reducer, [
         {id: "Experience", component: <Experience/>, isActive: false},
         {id: "CardAbout", component: <Education/>, isActive: false},
