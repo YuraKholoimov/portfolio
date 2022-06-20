@@ -13,9 +13,9 @@ const Contact = () => {
                 <div className={s.form}>
                     <form action="src/Components/contact/Contact">
                             <TextField id="outlined-basic" label="Имя *" variant="outlined"
-                                       sx={{padding: "0px 15px 15px 0px", width: "49%",}}/>
+                                       sx={{padding: "0px 15px 15px 0px", width: "100%",}}/>
                             <TextField id="outlined-basic" label="Email*" variant="outlined"
-                                       sx={{padding: "0px 0px 15px 0px", width: "49%"}}/>
+                                       sx={{padding: "0px 0px 15px 0px", width: "100%"}}/>
 
                             <TextField id="outlined-basic" label="Телефон*" variant="outlined"
                                        sx={{padding: "0px 0px 15px 0px", width: '100%'}}/>
