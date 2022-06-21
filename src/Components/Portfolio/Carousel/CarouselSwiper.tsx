@@ -36,7 +36,7 @@ const CarouselSwiper = () => {
                      }}>
                     <Arrow/>
                 </div>
-                <SwiperSlide><MyCard/></SwiperSlide>
+                <SwiperSlide><MyCard /></SwiperSlide>
                 <SwiperSlide><MyCard/></SwiperSlide>
                 <SwiperSlide><MyCard/></SwiperSlide>
                 <SwiperSlide><MyCard/></SwiperSlide>

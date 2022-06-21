@@ -23,16 +23,17 @@ const SideBar = (props: SideBarPropsType) => {
                         <div className={s.sidebar_border_2}></div>
                         {/*----- IMG -----*/}
                         <div className={s.img_holder}>
-                            <img src="https://frenify.net/envato/frenify/html/resumo/1/img/thumb/square.jpg"
-                                 alt="SQUARE"/>
+                            {/*<img src="https://frenify.net/envato/frenify/html/resumo/1/img/thumb/square.jpg"*/}
+                            {/*     alt="SQUARE"/>*/}
                             <div className={s.abs_img}></div>
                         </div>
                         {/* ----- Title IMG  ----- */}
                         <div className={s.title_holder}>
                             <h5>Привет, я </h5>
-                            <h3>Front-end developer
-                                <span className={s.animated_title}></span>
-                            </h3>
+
+                            {/*<h3>Front-end developer*/}
+                            {/*    <span className={s.animated_title}></span>*/}
+                            {/*</h3>*/}
                         </div>
                     </div>
                     {/*/!* ----- SideBar Contacts ----- *!/*/}

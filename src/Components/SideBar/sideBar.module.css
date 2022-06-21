@@ -104,6 +104,8 @@
 }
 
 .img_holder {
+    object-fit: cover;
+    min-height: calc(50vh - 10px);
     position: relative;
     z-index: 2;
 }
