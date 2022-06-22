@@ -148,15 +148,16 @@
 
 .title_holder h3 {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     font-size: 30px;
     min-height: 36px;
     position: relative;
-    display: flex;
-    justify-content: center;
+
 }
 
 .animated_title {
+    display: flex;
+    /*justify-content: center;*/
 }
 
 .animated_title:before {

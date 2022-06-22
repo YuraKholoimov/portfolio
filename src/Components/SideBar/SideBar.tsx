@@ -1,6 +1,7 @@
 import React, {SetStateAction} from 'react';
 import s from "./sideBar.module.css"
 import {Navigation} from "../Navigation/Navigation";
+import {ReactTypingEffectDemo} from "../UI/Inscription/Inscription";
 
 type SideBarPropsType = {
     isVisible: boolean
@@ -31,9 +32,11 @@ const SideBar = (props: SideBarPropsType) => {
                         <div className={s.title_holder}>
                             <h5>Привет, я </h5>
 
-                            {/*<h3>Front-end developer*/}
-                            {/*    <span className={s.animated_title}></span>*/}
-                            {/*</h3>*/}
+                            <h3>
+                                <span className={s.animated_title}>
+                                    <ReactTypingEffectDemo/>
+                                </span>
+                            </h3>
                         </div>
                     </div>
                     {/*/!* ----- SideBar Contacts ----- *!/*/}
