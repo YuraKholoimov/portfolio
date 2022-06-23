@@ -10,11 +10,12 @@ import 'swiper/css';
 import MyCard from '../Card/MyCard';
 import Arrow from "../../UI/Arrows/Arrow";
 
-
-const CarouselSwiper = () => {
+type CarouselSwiperPropsType = {
+    img?: { img: string, title: string, url: string, description: string, tech: string }[]
+}
+const CarouselSwiper: React.FC<CarouselSwiperPropsType> = ({img}) => {
     return (
         <div className={s.swiper}>
-
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 autoplay={true}
@@ -36,12 +37,21 @@ const CarouselSwiper = () => {
                      }}>
                     <Arrow/>
                 </div>
-                <SwiperSlide><MyCard /></SwiperSlide>
-                <SwiperSlide><MyCard/></SwiperSlide>
-                <SwiperSlide><MyCard/></SwiperSlide>
-                <SwiperSlide><MyCard/></SwiperSlide>
-                <SwiperSlide><MyCard/></SwiperSlide>
-                <SwiperSlide><MyCard/></SwiperSlide>
+
+                {/*----- CARDS MAPING -----*/}
+
+                {img?.map(el => {
+                    return <SwiperSlide>
+                        <MyCard
+                            img={el.img}
+                            title={el.title}
+                            description={el.description}
+                            url={el.url}
+                            tech={el.tech}
+                        />
+                    </SwiperSlide>
+                })}
+
             </Swiper>
         </div>
     );

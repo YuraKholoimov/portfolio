@@ -5,30 +5,40 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {Link, NavLink} from "react-router-dom";
+import {Paper} from "@mui/material";
 
-export default function MediaCard() {
-
+type MediaCardPropsType = {
+    img?: string
+    title: string
+    url: string
+    description: string
+    tech: string
+}
+export default function MediaCard({img, title, url, description, tech}: MediaCardPropsType) {
     return (
-        <Card sx={{maxWidth: 400, height: 350}}>
-            <CardMedia
-                component="img"
-                height="140"
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxblFcyvVDFhpdQv1Hp-XROfpytT-R_GygmA&usqp=CAU"
-                alt="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-            </CardActions>
-        </Card>
-    );
+        <>
+            <Paper elevation={0} sx={{maxWidth: 450, height: 350}}>
+                <a href={url} target={"_blank"}>
+                    <CardMedia
+                        component="img"
+                        height="180"
+                        image={img}
+                        alt="img cover"
+                    />
+                </a>
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        {title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        {description}
+                    </Typography>
+                    <Typography variant="caption" color="text.secondary" >
+                        <strong>({tech})</strong>
+                    </Typography>
+                </CardContent>
+            </Paper>
+        </>
+    )
 }
