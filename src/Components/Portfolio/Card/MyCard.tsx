@@ -14,7 +14,7 @@ type MediaCardPropsType = {
 export default function MediaCard({img, title, url, description, tech}: MediaCardPropsType) {
     return (
         <>
-            <Paper elevation={0} sx={{maxWidth: 450, height: 350}}>
+            <Paper elevation={0} sx={{maxWidth: 450, height: 400}}>
                 <a href={url} target={"_blank"}>
                     <CardMedia
                         component="img"
