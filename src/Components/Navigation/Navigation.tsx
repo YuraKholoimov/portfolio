@@ -21,6 +21,7 @@ export const Navigation = (props: Props) => {
     ])
 
     const onClickHandler = (e: any, title: string) => {
+        props.setIsOpenMenu(false)
         onHandlerSmoothScroll(e, title)
         setNavigationMenu(state => {
             return state.map(el => el.href === title ? {...el, isActive: true} : {...el, isActive: false})
@@ -30,9 +31,7 @@ export const Navigation = (props: Props) => {
 
     return (
         <div className={s.container}>
-            <div className={`${props.isOpenMenu ? s.isOpen : s.closed} 
-            ${s.navigation}
-            ${!props.isVisible && s.width}`}>
+            <div className={`${props.isOpenMenu ? s.isOpen : s.closed} ${s.navigation} ${!props.isVisible && s.width}`}>
                 <div className={`${props.isOpenMenu ? s.nav_open : s.nav_close} ${s.nav_in}`}>
 
                     {/*---- Button closer navigation -----*/}
