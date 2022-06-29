@@ -6,7 +6,7 @@ import s from "./skills.module.css"
 const Skills = () => {
     return (
         <div className={s.progressItem}>
-            <h3 className={s.progressTitle}>React TS / Redux</h3>
+            <h3 className={s.progressTitle}>React TS / Redux (Toolkit)</h3>
             <InputRange value={90}/>
             <h3 className={s.progressTitle}>JavaScript </h3>
             <InputRange value={80}/>
