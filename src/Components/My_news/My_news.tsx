@@ -4,9 +4,9 @@ import PageTitlePortfolio from "../UI/PageTitlePortfolio/PageTitlePortfolio";
 import {BigButton} from "../UI/BigButton/BigButton";
 
 const MyNews = () => {
-    const img_1 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/1.jpg'
-    const img_2 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/4.jpg'
-    const img_3 = 'https://frenify.net/envato/frenify/html/resumo/1/img/blog/3.jpg'
+    const img_1 = require ('../../Assets/IMG/News/img1.jpg')
+    const img_2 = require ('../../Assets/IMG/News/Emerging-web-design-trends-for-2021.jpeg')
+    const img_3 = require ('../../Assets/IMG/News/img3.jpg')
 
     return (
         <section id={"my_news"}>
@@ -33,8 +33,10 @@ const MyNews = () => {
                         </div>
                         <div className={s.item_title}>
                             <p>Сунтября 22, 2021</p>
-                            <h3><a href="">Пять убедительных доказательств того, что посещение дизайнера полезно
-                                для вашего карьерного роста.</a>
+                            <h3><a href="">
+                                Web-сервисы который помогают идти в ногу со временем,
+                                мессенджеры, облачные хранилища, кино-новинки, музыка...
+                            </a>
                             </h3>
                         </div>
                     </div>
@@ -45,21 +47,16 @@ const MyNews = () => {
                         </div>
                         <div className={s.item_title}>
                             <p>Сунтября 22, 2021</p>
-                            <h3><a href="">Пять убедительных доказательств того, что посещение дизайнера полезно
-                                для вашего карьерного роста.</a>
+                            <h3><a href="">
+                                Современый код, библиотеки, технологии и новый инструментарий,
+                                который позволяет писать код качественнее не теряя во времени.
+                            </a>
                             </h3>
                         </div>
                     </div>
-
-
-                    {/*<div className={s.load_more}>*/}
-                    {/*    <a href="#" className={s.done}>*/}
-                    {/*        <span className={s.link_text}>Gjrfpfnm</span>*/}
-                    {/*    </a>*/}
-                    {/*</div>*/}
-
-
                 </div>
+
+                {/*----- LOAD MORE CARDS -----*/}
                 <BigButton>Показать еще</BigButton>
             </div>
         </section>

@@ -6,28 +6,28 @@ import PageTitlePortfolio from "../UI/PageTitlePortfolio/PageTitlePortfolio";
 const Portfolio = () => {
     const img = [
         {
-            img: require("../../Assets/todo.png"),
+            img: require("../../Assets/IMG/Projects/todo.png"),
             title: 'Trello',
             url: "https://yurakholoimov.github.io/task-board/",
             description: "Программа для планирования задач",
             tech: "TypeScript, React, Redux Toolkit, Thunk, Axios, Git, MUI",
         },
         {
-            img: require("../../Assets/cards.png"),
+            img: require("../../Assets/IMG/Projects/cards.png"),
             title: 'Cards for learning',
             url: "https://yurakholoimov.github.io/cards-front-2.0/",
             description: "Тематические колоды карт для обучения",
             tech: "TypeScript, React, Redux Toolkit, Thunk, Axios, Git",
         },
         {
-            img: require("../../Assets/social.png"),
+            img: require("../../Assets/IMG/Projects/social.png"),
             title: 'Cosial network',
             url: "https://yurakholoimov.github.io/itIncubatorNetwork/",
             description: "Социальная сеть",
             tech: "TypeScript, React, Redux Toolkit, Thunk, Axios, Git, Bootstrap",
         },
         {
-            img: require("../../Assets/catsMarket.png"),
+            img: require("../../Assets/IMG/Projects/catsMarket.png"),
             title: 'Cats market templates',
             url: "https://yurakholoimov.github.io/catsMarket/",
             description: "Шаблон интернет магазина",
@@ -35,14 +35,14 @@ const Portfolio = () => {
 
         },
         {
-            img: require("../../Assets/tracker-dashboard"),
+            img: require("../../Assets/IMG/Projects/tracker-dashboard"),
             title: 'Tracking dashboard',
             url: "https://tracking-dashboard-h3mzgsrpe-yurakholoimov.vercel.app/",
             description: "Шаблон трекера",
             tech: "JavaScript, HTML, CSS",
         },
         {
-            img: require("../../Assets/healthyFood.png"),
+            img: require("../../Assets/IMG/Projects/healthyFood.png"),
             title: 'Healthy Food',
             url: "https://yurakholoimov.github.io/healthyFood/",
             description: "Шаблон сайта правильного питания с расчетом каллорий",
