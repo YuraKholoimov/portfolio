@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ccdc8fd4.css",
-    "main.js": "/portfolio/static/js/main.d9cae595.js",
+    "main.js": "/portfolio/static/js/main.bf46aa16.js",
     "static/media/healthyFood.png": "/portfolio/static/media/healthyFood.29a64fb6cde5abed60f2.png",
     "static/media/cards.png": "/portfolio/static/media/cards.ae6293709ad294e1b609.png",
     "static/media/catsMarket.png": "/portfolio/static/media/catsMarket.43835ab43d941b88af2c.png",
     "static/media/social.png": "/portfolio/static/media/social.479c495819e760cecbee.png",
     "static/media/todo.png": "/portfolio/static/media/todo.937b21e9761e12072430.png",
     "static/media/Q.jpg": "/portfolio/static/media/Q.207d4782f7b5f8cffe41.jpg",
+    "static/media/img3.jpg": "/portfolio/static/media/img3.f3dfce83928f8cb8e9be.jpg",
+    "static/media/img1.jpg": "/portfolio/static/media/img1.59e9ab0c9fc90c561e2d.jpg",
     "static/media/tracker-dashboard": "/portfolio/static/media/tracker-dashboard.070040c3421f33de594d",
+    "static/media/Emerging-web-design-trends-for-2021.jpeg": "/portfolio/static/media/Emerging-web-design-trends-for-2021.5f04fd3c1711c9fd8257.jpeg",
     "static/media/signature2.png": "/portfolio/static/media/signature2.518d4dbadad16485004a.png",
     "static/media/codewars_logo_icon_145389.ico": "/portfolio/static/media/codewars_logo_icon_145389.19bb28194d32c303c1cb.ico",
     "index.html": "/portfolio/index.html",
     "main.ccdc8fd4.css.map": "/portfolio/static/css/main.ccdc8fd4.css.map",
-    "main.d9cae595.js.map": "/portfolio/static/js/main.d9cae595.js.map"
+    "main.bf46aa16.js.map": "/portfolio/static/js/main.bf46aa16.js.map"
   },
   "entrypoints": [
     "static/css/main.ccdc8fd4.css",
-    "static/js/main.d9cae595.js"
+    "static/js/main.bf46aa16.js"
   ]
 }
