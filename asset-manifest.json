@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ccdc8fd4.css",
-    "main.js": "/portfolio/static/js/main.bf46aa16.js",
+    "main.css": "/portfolio/static/css/main.43e57f49.css",
+    "main.js": "/portfolio/static/js/main.701bd710.js",
     "static/media/healthyFood.png": "/portfolio/static/media/healthyFood.29a64fb6cde5abed60f2.png",
     "static/media/cards.png": "/portfolio/static/media/cards.ae6293709ad294e1b609.png",
     "static/media/catsMarket.png": "/portfolio/static/media/catsMarket.43835ab43d941b88af2c.png",
@@ -15,11 +15,11 @@
     "static/media/signature2.png": "/portfolio/static/media/signature2.518d4dbadad16485004a.png",
     "static/media/codewars_logo_icon_145389.ico": "/portfolio/static/media/codewars_logo_icon_145389.19bb28194d32c303c1cb.ico",
     "index.html": "/portfolio/index.html",
-    "main.ccdc8fd4.css.map": "/portfolio/static/css/main.ccdc8fd4.css.map",
-    "main.bf46aa16.js.map": "/portfolio/static/js/main.bf46aa16.js.map"
+    "main.43e57f49.css.map": "/portfolio/static/css/main.43e57f49.css.map",
+    "main.701bd710.js.map": "/portfolio/static/js/main.701bd710.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccdc8fd4.css",
-    "static/js/main.bf46aa16.js"
+    "static/css/main.43e57f49.css",
+    "static/js/main.701bd710.js"
   ]
 }
